@@ -17,8 +17,8 @@ We will focus on three goals:
   - Use a pie chart or donut chart to visualize the borough-specific fatality rates.
   - Each segment of the chart represents a borough, and the size of the segment corresponds to the fatality rate.
 
-- **Count of Drivers Distracted by Texting per Borough (Bar Chart or Pie Chart):**
-  - Create a bar chart or pie chart to show the count of drivers distracted by texting per borough.
+- **Count of Drivers Distracted per Borough (Bar Chart or Pie Chart):**
+  - Create a bar chart or pie chart to show the count of drivers distracted per borough.
   - Each bar or segment represents a borough, and the size/height represents the count of distracted drivers.
 
 ## Interactive Map Features
