@@ -6,7 +6,7 @@
 This project aims to create an interactive map to visualize and analyze New York City collision data. We will use the Chart.js library to present key insights to users. The project will offer different views for a comprehensive exploration of the data.
 
 ## Goals
-We will focus on three out of the following five goals:
+We will focus on three goals:
 
 - **Number of Collisions per Borough (Bar Chart):**
   - Create a bar chart using Chart.js to display the number of collisions per borough.
