@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Map</title>
+    <!-- Include Leaflet CSS and JavaScript files -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <!-- Create a div element to hold the map -->
+    <div id="map" style="width: 800px; height: 600px;"></div>
+
+    <script>
+        // Initialize the map
+        var map = L.map('map').setView([40.7128, -74.0060], 10); // Set the initial center and zoom level
+
+        // Add a tile layer (you can use different map providers)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Add markers for crash data
+        var crashData = {{ crash_data | tojson | safe }}; // Get crash data from Flask
+
+        crashData.forEach(function(crash) {
+            L.marker([crash.lat, crash.lon]).addTo(map)
+                .bindPopup(crash.description); // Display a popup with crash description
+        });
+    </script>
+</body>
+</html>
