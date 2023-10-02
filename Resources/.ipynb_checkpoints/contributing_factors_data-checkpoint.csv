@@ -1,0 +1,56 @@
+contributing_factor_id,contributing_factor_description
+1,Alcohol Involvement
+2,Other Vehicular
+3,Driver Inattention/Distraction
+4,Unspecified
+5,Following Too Closely
+6,Traffic Control Disregarded
+7,Unsafe Speed
+8,Passing or Lane Usage Improper
+9,Tire Failure/Inadequate
+10,Driver Inexperience
+11,Obstruction/Debris
+12,Backing Unsafely
+13,Failure to Yield Right-of-Way
+14,Passing Too Closely
+15,Reaction to Uninvolved Vehicle
+16,Unsafe Lane Changing
+17,Fell Asleep
+18,Turning Improperly
+19,Outside Car Distraction
+20,Aggressive Driving/Road Rage
+21,Brakes Defective
+22,Physical Disability
+23,Fatigued/Drowsy
+24,Steering Failure
+25,Driverless/Runaway Vehicle
+26,Vehicle Vandalism
+27,Pedestrian/Bicyclist/Other Pedestrian Error/Confusion
+28,Oversized Vehicle
+29,Pavement Slippery
+30,Passenger Distraction
+31,View Obstructed/Limited
+32,Lost Consciousness
+33,Illnes
+34,Pavement Defective
+35,Animals Action
+36,Failure to Keep Right
+37,Texting
+38,Lane Marking Improper/Inadequate
+39,Glare
+40,Other Lighting Defects
+41,Headlights Defective
+42,Accelerator Defective
+43,Other Electronic Device
+44,Cell Phone (hand-Held)
+45,Drugs (illegal)
+46,Windshield Inadequate
+47,Traffic Control Device Improper/Non-Working
+48,Tinted Windows
+49,Eating or Drinking
+50,Prescription Medication
+51,Cell Phone (hands-free)
+52,Using On Board Navigation Device
+53,Tow Hitch Defective
+54,Listening/Using Headphones
+55,Shoulders Defective/Improper
