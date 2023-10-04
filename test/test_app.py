@@ -15,8 +15,7 @@ Base = automap_base()
 Base.prepare(autoload_with=engine)
 
 # Map the appropriate class to your PostgreSQL table
-crashes = Base.classes.crashes_table
-persons = Base.classes.persons_table  
+borough = Base.classes.brgh_collisions
 
 @app.route('/')
 def welcome():
@@ -25,24 +24,24 @@ def welcome():
 
 
 # Define a route to serve the dashboard page
-# Define a route to serve the dashboard page
-@app.route('/api/data')
+
+@app.route('/api/collision')
 def get_data():
     # Create a session to interact with the database
     session = Session(engine)
 
     # Query the database to retrieve the data you want
-    results = session.query(crashes).all()
+    results = session.query(borough).all()
 
     session.close()
 
     # Convert query results to a list of dictionaries
-    data_results = []
+    borough_collisions_results = []
     for row in results:
-        row_dict = {column.name: getattr(row, column.name) for column in crashes.__table__.columns}
-        data_results.append(row_dict)
+        row_dict = {column.name: getattr(row, column.name) for column in borough.__table__.columns}
+        borough_collisions_results.append(row_dict)
 
-    return jsonify(data_results)
+    return jsonify(borough_collisions_results)
 
 if __name__ == '__main__':
     app.run(debug=True)
