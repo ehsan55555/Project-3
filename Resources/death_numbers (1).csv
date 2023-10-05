@@ -1,0 +1,7 @@
+Borough,person_deaths,pedestrian_deaths,cyclist_deaths,motorist_deaths
+QUEENS,86,28,7,46
+MANHATTAN,133,68,11,51
+BROOKLYN,126,54,19,51
+BRONX,116,45,3,68
+STATEN ISLAND,24,8,1,14
+Unknown,4,4,0,0
